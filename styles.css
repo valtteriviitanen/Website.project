@@ -23,12 +23,10 @@ p {
 
 .menu {
     display: flex;
-<<<<<<< HEAD
-    
+
     align-items: center;
-=======
     justify-content: space-between;
->>>>>>> parent of 93a345b (Update styles.css)
+
     background-color: #0046ad;
     padding: 10px;
     position: relative;
