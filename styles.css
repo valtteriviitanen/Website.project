@@ -23,7 +23,7 @@ p {
 
 .menu {
     display: flex;
-    flex-direction: column;
+    
     align-items: flex-start;
     background-color: #0046ad;
     padding: 10px;
