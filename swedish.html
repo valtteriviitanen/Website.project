@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid - Svenska</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="menu" id="menu">
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="menu-content" id="menu-content">
+            <a href="index.html">Hem</a>
+            <a href="players.html">Spelare</a>
+            <a href="contact.html">Kontakta oss</a>
+            <a href="swedish.html">Svenska</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Real Madrid</h1>
+        <p>Vi är de bästa!</p>
+    </header>
+
+    <section class="content">
+        <h2>Om oss</h2>
+        <p>Real Madrid är en av de bästa fotbollsklubbarna i världen. Vi har vunnit flera titlar och har stjärnspelare
+            som Cristiano Ronaldo och Sergio Ramos.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Real Madrid FC | Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu-content');
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

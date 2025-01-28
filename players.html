@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelaajat | Real Madrid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="menu" id="menu">
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="menu-content" id="menu-content">
+            <a href="index.html">Etusivu</a>
+            <a href="players.html">Pelaajat</a>
+            <a href="contact.html">Yhteystiedot</a>
+            <a href="swedish.html">Svenska</a>
+        </div>
+    </div>
+
+    <section class="content">
+        <h1>Real Madridin parhaat pelaajat</h1>
+        <h2>Cristiano Ronaldo</h2>
+        <p>Cristiano Ronaldo on yksi aikamme parhaista jalkapalloilijoista ja Real Madridin legendaarinen hyökkääjä.</p>
+        <h2>Sergio Ramos</h2>
+        <p>Sergio Ramos, joukkueen puolustaja ja kapteeni, on tunnettu johtajuudestaan ja taistelutahdostaan kentällä.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Real Madrid FC | Kaikki oikeudet pidätetään.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu-content');
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
