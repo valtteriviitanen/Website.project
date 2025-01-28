@@ -27,23 +27,25 @@ p {
     
     align-items: center;
 =======
-    justify-content: flex-end;
+    justify-content: space-between;
 >>>>>>> parent of 93a345b (Update styles.css)
     background-color: #0046ad;
     padding: 10px;
+    position: relative;
 }
 
 .hamburger {
     font-size: 30px;
     color: white;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .menu-content {
     display: none;
     position: absolute;
     top: 60px;
-    right: 0;
+    right: 10px;
     background-color: #0046ad;
     width: 200px;
 }
