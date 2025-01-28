@@ -68,14 +68,18 @@ footer {
 
 .sponsor {
     margin-top: 30px;
-    text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
 
-
+.sponsor-logo {
+    display: inline;
 }
 
 .sponsor-logo {
     width: 150px;
     height: auto;
-    display: block;
 }
