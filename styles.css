@@ -69,11 +69,13 @@ footer {
 .sponsor {
     margin-top: 30px;
     text-align: center;
+    display: flex;
+
+
 }
 
 .sponsor-logo {
     width: 150px;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
