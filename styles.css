@@ -14,7 +14,6 @@ header {
 
 h1 {
     color: #0046ad;
-    /* Real Madrid sininen */
 }
 
 p {
@@ -23,12 +22,8 @@ p {
 
 .menu {
     display: flex;
-<<<<<<< HEAD
-    
-    align-items: center;
-=======
     justify-content: space-between;
->>>>>>> parent of 93a345b (Update styles.css)
+    align-items: center;
     background-color: #0046ad;
     padding: 10px;
     position: relative;
@@ -38,14 +33,16 @@ p {
     font-size: 30px;
     color: white;
     cursor: pointer;
-    margin-left: auto;
+    margin-right: auto;
+    /* Siirtää hamburgerin vasempaan reunaan */
 }
 
 .menu-content {
     display: none;
     position: absolute;
     top: 60px;
-    right: 10px;
+    left: 10px;
+    /* Avaa vasemmalta */
     background-color: #0046ad;
     width: 200px;
 }
