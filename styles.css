@@ -76,6 +76,10 @@ footer {
 }
 
 .sponsor-logo {
+    display: inline;
+}
+
+.sponsor-logo {
     width: 150px;
     height: auto;
 }
