@@ -27,11 +27,14 @@ p {
     background-color: #0046ad;
     padding: 10px;
     position: relative;
+    justify-content: space-between;
 }
 
 .logo {
     height: 40px;
     width: auto;
+    margin-right: 10px;
+    mix-blend-mode: multiply;
 }
 
 .hamburger {
