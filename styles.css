@@ -375,14 +375,17 @@ p {
 }
 
 button {
-    background-color: #04AA6D;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #0046ad;
     color: white;
-    padding: 14px 20px;
-    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    width: auto;
-    font-size: 18px;
+    z-index: 1000;
 }
 
 button:hover {
