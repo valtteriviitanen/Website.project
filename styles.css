@@ -375,17 +375,16 @@ p {
 }
 
 button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: #0046ad;
+    background-color: #04AA6D;
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
     border: none;
+    padding: 10px 20px;
+    font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000;
+    position: absolute; /* Position it inside the menu */
+    top: 10px; /* Adjust the top position */
+    right: 20px; /* Adjust
 }
 
 button:hover {
