@@ -278,3 +278,16 @@ span.psw {
 .language-btn:hover {
     background-color: #ddd;
 }
+
+.main-title {
+    color: #0046ad;
+    /* Otsikon väri */
+    font-size: 4em;
+    /* Fonttikoko, voit muuttaa tarpeen mukaan */
+    font-weight: bold;
+    /* Tekstin lihavointi */
+    margin-bottom: 20px;
+    /* Lisää tilaa otsikon ja seuraavan elementin väliin */
+    text-align: center;
+    /* Keskittää otsikon */
+}
