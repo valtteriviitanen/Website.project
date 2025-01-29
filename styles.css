@@ -397,79 +397,86 @@ footer {
 }
 
 
-/* Asetellaan kuva ja pelaajalista */
-.image-container {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    /* Lisää väli kuvan ja listan väliin */
+
+.image-gallery {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.player-image {
-    width: 90%;
-    max-width: 1000px;
-    /* Rajoita kuvan maksimikoko */
+
+.shirt-image {
+    width: 150px;
     height: auto;
-    margin: 0 auto;
-    /* Keskittää kuvan */
-    display: block;
-    /* Varmistaa, että kuva on block-elementti */
     border-radius: 10px;
-    /* Pyöristää kuvan kulmat */
-}
+    transition: transform 0.3s ease-in-out;
 
-/* Pelaajalista */
-.content {
-    padding: 40px 20px;
-    text-align: left;
-    /* Vasemmalle tasattu teksti */
-}
+    .shirt-image:hover {
+        transform: scale(1.1);
+    }
 
-/* Pelaajalistan otsikot (esim. Goalkeepers, Defenders) */
-.content h2 {
-    color: #0046ad;
-    font-size: 2.2em;
-    margin-bottom: 10px;
-}
 
-/* Pelaajalistan teksti */
-.content p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 5px 0;
-    /* Pienentää marginaaleja */
-}
-
-/* Varmistetaan, että teksti ei mene liian lähelle reunaa */
-.content ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 18px;
-    margin: 0;
-}
-
-/* Varmistetaan väli listan rivien välillä */
-.content ul li {
-    margin: 10px 0;
-}
-
-/* Responsiivinen asettelu: Jos ruutukoko on pieni, muutetaan asetuksia */
-@media screen and (max-width: 768px) {
-    .player-image {
+    .image-container {
         width: 100%;
-        /* Kuvan täyttö koko leveys mobiililaitteilla */
-        max-width: none;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .player-image {
+        width: 90%;
+        max-width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
     }
 
     .content {
-        padding: 20px;
+        padding: 40px 20px;
+        text-align: left;
     }
 
     .content h2 {
-        font-size: 1.8em;
+        color: #0046ad;
+        font-size: 2.2em;
+        margin-bottom: 10px;
     }
 
     .content p {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 5px 0;
     }
-}
+
+
+    @media screen and (max-width: 768px) {
+        .player-image {
+            width: 100%;/ max-width: none;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+        }
+
+        .content p {
+            font-size: 16px;
+        }
+
+        .image-gallery {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .shirt-image {
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+    }
