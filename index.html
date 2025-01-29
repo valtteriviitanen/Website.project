@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="fi">
 
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Madrid CF</title>
+  <title>Real Madrid CF
+  </title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="index-page">
+<body>
 
-  <div class="menu">
+
+  <div class="menu" id="menu">
+    
     <img src="logo.png" alt="Real Madrid Logo" class="logo">
-    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+      &#9776;
+    </div>
     <div class="menu-content" id="menu-content">
       <a href="index.html">Etusivu</a>
       <a href="players.html">Pelaajat</a>
@@ -21,49 +60,50 @@
     </div>
   </div>
 
-  <div class="layout-container">
-    <div class="image-container">
-      <img src="your-image.jpg" alt="Real Madrid">
+
+  <header>
+    <h1>Real Madrid</h1>
+    <p>Welcome to Real Madrid – The Pride of Football</p>
+    <div class="sponsor">
+      <img src="adidas.png" alt="Adidas Sponsor" class="sponsor-logo">
+      <img src="emirates.svg" alt="Emirates Sponsor" class="sponsor-logo">
     </div>
-    <div class="content">
-      <header>
-        <h1>Real Madrid</h1>
-        <p>Welcome to Real Madrid – The Pride of Football</p>
-        <div class="sponsor">
-          <img src="adidas.png" alt="Adidas" class="sponsor-logo">
-          <img src="emirates.svg" alt="Fly Emirates" class="sponsor-logo">
-        </div>
-      </header>
-      <section>
-        <h2>Our Legacy</h2>
-        <p>Real Madrid, founded in 1902, is one of the most successful football clubs in the world. With a rich history of
-          achievements, including 35 La Liga titles and 14 UEFA Champions League trophies, Real Madrid has established
-          itself as a global symbol of excellence.</p>
-        <h2>Achievements</h2>
-        <ul>
-          <li>35 La Liga Titles</li>
-          <li>14 UEFA Champions League Titles</li>
-          <li>19 Copa del Rey Trophies</li>
-          <li>5 FIFA Club World Cup Wins</li>
-        </ul>
-        <h2>Legendary Players</h2>
-        <p>Throughout its history, Real Madrid has been home to some of the greatest players the world has ever seen:</p>
-        <ul>
-          <li>Alfredo Di Stéfano</li>
-          <li>Cristiano Ronaldo</li>
-          <li>Zinedine Zidane</li>
-          <li>Raúl González</li>
-          <li>Ferenc Puskás</li>
-        </ul>
-        <h2>Our Rivalries</h2>
-        <p>Real Madrid has fierce rivalries with teams like Barcelona, Atlético Madrid, and Valencia. The encounters with
-          Barcelona, known as "El Clásico," are legendary and are among the most watched football matches worldwide.</p>
-      </section>
-      <footer>
-        <p>© 2025 Real Madrid FC | All rights reserved.</p>
-      </footer>
-    </div>
-  </div>
+  </header>
+
+  <section class="content">
+
+    <h2>Our Legacy</h2>
+    <p>Real Madrid, founded in 1902, is one of the most successful football clubs in the world. With a rich history of
+      achievements, including 35 La Liga titles and 14 UEFA Champions League trophies, Real Madrid has established
+      itself as a global symbol of excellence.</p>
+
+    <h2>Achievements</h2>
+    <ul>
+      <li>35 La Liga Titles</li>
+      <li>14 UEFA Champions League Titles</li>
+      <li>19 Copa del Rey Trophies</li>
+      <li>5 FIFA Club World Cup Wins</li>
+    </ul>
+
+    <h2>Legendary Players</h2>
+    <p>Throughout its history, Real Madrid has been home to some of the greatest players the world has ever seen:</p>
+    <ul>
+      <li>Alfredo Di Stéfano</li>
+      <li>Cristiano Ronaldo</li>
+      <li>Zinedine Zidane</li>
+      <li>Raúl González</li>
+      <li>Ferenc Puskás</li>
+    </ul>
+
+    <h2>Our Rivalries</h2>
+    <p>Real Madrid has fierce rivalries with teams like Barcelona, Atlético Madrid, and Valencia. The encounters with
+      Barcelona, known as "El Clásico," are legendary and are among the most watched football matches worldwide.</p>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Real Madrid FC | All rights reserved.</p>
+  </footer>
 
   <script>
     function toggleMenu() {
