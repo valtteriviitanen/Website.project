@@ -380,8 +380,8 @@ button {
     /* Adjusts the vertical position */
     right: 20px;
     /* Adjusts the horizontal position */
-    background-color: #04AA6D;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     padding: 10px 15px;
     font-size: 14px;
