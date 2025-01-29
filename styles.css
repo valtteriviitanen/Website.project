@@ -378,9 +378,15 @@ button {
     top: 10px;
 
     right: 20px;
+<<<<<<< HEAD
+    /* Adjusts the horizontal position */
+    background-color: white;
+    color: black;
+=======
 
     background-color: #04AA6D;
     color: white;
+>>>>>>> 0fc7a3c5b04dc5ed47eca7ea7b6558a8c432a9ae
     border: none;
     padding: 10px 15px;
     font-size: 14px;
