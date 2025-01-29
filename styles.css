@@ -114,16 +114,3 @@ footer {
     width: 150px;
     height: auto;
 }
-
-body {
-    background-image: url('relluwhite.jpg');
-    /* Replace with your image file */
-    background-size: cover;
-    /* Ensures the image covers the entire page */
-    background-position: center;
-    /* Centers the image */
-    background-repeat: no-repeat;
-    /* Prevents the image from repeating */
-    background-attachment: fixed;
-    /* Keeps the background fixed when scrolling */
-}
