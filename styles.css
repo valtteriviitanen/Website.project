@@ -495,7 +495,19 @@ footer {
         align-items: center;
     }
 
+<<<<<<< HEAD
 
 
 
 }
+=======
+    .shirt-image {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+}
+
+.bg-image {
+    opacity: 0.7;
+>>>>>>> 7ffa408418773a6c64855880ce21916d8d7041cc
