@@ -507,3 +507,28 @@ footer {
 
 
 }
+
+
+.content {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Keskittää sisällön */
+    justify-content: center;
+}
