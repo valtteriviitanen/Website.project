@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header */
 header {
     background-color: #FFFFFF;
     text-align: center;
@@ -20,6 +22,7 @@ p {
     font-size: 18px;
 }
 
+/* Menu Bar */
 .menu {
     display: flex;
     justify-content: space-between;
@@ -27,9 +30,9 @@ p {
     background-color: #0f2145;
     padding: 10px;
     position: relative;
-    justify-content: space-between;
 }
 
+/* Real Madrid Logo */
 .logo {
     height: 40px;
     width: auto;
@@ -37,20 +40,20 @@ p {
     mix-blend-mode: multiply;
 }
 
+/* Hamburger Menu */
 .hamburger {
     font-size: 30px;
     color: white;
     cursor: pointer;
     margin-right: auto;
-    /* Siirtää hamburgerin vasempaan reunaan */
 }
 
+/* Dropdown Navigation */
 .menu-content {
     display: none;
     position: absolute;
     top: 60px;
     left: 10px;
-    /* Avaa vasemmalta */
     background-color: #0f2145;
     width: 200px;
 }
@@ -66,6 +69,21 @@ p {
     background-color: #333;
 }
 
+/* Login Button */
+.login-btn {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+/* Page Content */
 .content {
     padding: 40px 20px;
     text-align: center;
@@ -93,6 +111,7 @@ p {
     margin: 10px 0;
 }
 
+/* Footer */
 footer {
     background-color: #0f2145;
     color: white;
@@ -100,13 +119,13 @@ footer {
     padding: 10px 0;
 }
 
+/* Sponsor Logos */
 .sponsor {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    text-align: center;
 }
 
 .sponsor-logo {
@@ -115,155 +134,151 @@ footer {
     height: auto;
 }
 
+/* Form Styling */
 form {
     border: 3px solid #f1f1f1;
-  }
-  
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
+}
+
+/* Input Fields */
+input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-  }
-  
-  /* Set a style for all buttons */
-  button {
-    background-color: 	#FFFFFF; /* Keep original green color */
+}
+
+/* General Button Styling */
+button {
+    background-color: #FFFFFF;
     color: #000000;
     border: none;
-    padding: 6px 12px; /* Reduce padding */
-    font-size: 14px; /* Make text smaller */
+    padding: 6px 12px;
+    font-size: 14px;
     cursor: pointer;
     position: absolute;
-    top: 10px; /* Position near top */
-    right: 15px; /* Move to top-right */
-    border-radius: 5px; /* Rounded corners */
+    top: 10px;
+    right: 15px;
+    border-radius: 5px;
     width: auto;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
+}
+
+/* Button Hover Effect */
+button:hover {
     opacity: 0.8;
-  }
-  
-  /* Extra style for the cancel button (red) */
-  .cancelbtn {
+}
+
+/* Cancel Button */
+.cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
-  }
-  
-  /* Center the avatar image inside this container */
-  .imgcontainer {
+}
+
+/* Avatar Image Container */
+.imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
+}
+
+/* Avatar Image */
+img.avatar {
     width: 40%;
     border-radius: 50%;
-  }
-  
-  /* Add padding to containers */
-  .container {
+}
+
+/* Add Padding to Form Containers */
+.container {
     padding: 16px;
-  }
-  
-  /* The "Forgot password" text */
-  span.psw {
+}
+
+/* Forgot Password Text */
+span.psw {
     float: right;
     padding-top: 16px;
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
+}
+
+/* Small Screen Adjustments */
+@media screen and (max-width: 300px) {
     span.psw {
-      display: block;
-      float: none;
+        display: block;
+        float: none;
     }
     .cancelbtn {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+/* Login Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
     padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
+    margin: 5px auto;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    /* Position it in the top right corner outside of the modal */
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Close Button */
+.close {
     position: absolute;
     right: 25px;
-    top: 0;
+    top: 10px;
     color: #000;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  /* Close button on hover */
-  .close:hover,
-  .close:focus {
-    color: red;
     cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-  }
-  
-  @keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-  }
+}
 
+.close:hover {
+    color: red;
+}
 
-  
+/* Modal Animation */
+@keyframes animatezoom {
+    from { transform: scale(0) }
+    to { transform: scale(1) }
+}
+
+.animate {
+    animation: animatezoom 0.6s;
+}
+
+/* Layout for index.html */
 .index-page {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: flex-start;
     height: 100vh;
     margin: 0;
 }
 
+/* Text Content (Right Side) */
 .index-page .content {
     width: 50%;
     padding: 20px;
-    text-align: right; 
+    text-align: right;
 }
 
+/* Image Container (Left Side) */
 .index-page .image-container {
-    width: 50%; 
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,4 +287,28 @@ form {
 .index-page .image-container img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .index-page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .index-page .image-container,
+    .index-page .content {
+        width: 100%;
+    }
+
+    .menu-content {
+        right: 5px;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 15px;
+    }
 }
