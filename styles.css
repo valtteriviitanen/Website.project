@@ -28,6 +28,7 @@ p {
     padding: 10px;
     position: relative;
 }
+
 .logo {
     height: 40px;
     width: auto;
@@ -111,4 +112,14 @@ footer {
     height: auto;
 }
 
-
+body {
+    background-image: url('city.avif');
+    /* Replace with your image file */
+    background-size: cover;
+    /* Ensures the image covers the entire page */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-attachment: fixed;
+    /* Keeps the background fixed when scrolling */
