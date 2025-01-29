@@ -23,8 +23,33 @@
             <a href="swedish.html">Svenska</a>
         </div>
     </div>
+    <div style="margin-top: 20px">
     <img src="pelaajatrellu.png" alt="Real Madrid players" class="player-image">
+    </div>
 
+
+    <style>
+        body {
+          position: relative; /
+          margin: 0;
+        }
+      
+        
+        body::before {
+          content: "";
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('backround.jpeg.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          opacity: 0.3; 
+          z-index: -1; 
+        }
+      </style>
 
     <section class="content">
         <h1>Real Madrid Players List</h1>
