@@ -395,3 +395,70 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+
+/* Kuvan ja pelaajalistan välinen etäisyys */
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Lisää väli kuvan ja listan väliin */
+}
+
+.player-image {
+    width: 80%;
+    max-width: 900px;
+    /* Rajaa kuvan maksimikoko */
+    height: auto;
+    border-radius: 10px;
+    /* Pyöristää kuvan kulmat */
+    margin-bottom: 20px;
+}
+
+/* Pelaajalista - h2 ja p väli */
+.content h2 {
+    color: #0046ad;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+/* Tasataan pelaajalistan teksti ja pienennetään marginaaleja */
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Varmistetaan, että pelaajalista ei mene reunojen yli */
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Pelaajalistan rivien väli */
+.content ul li {
+    margin: 10px 0;
+}
+
+/* Responsiivinen asettelu: Jos ruutukoko on pieni, muutetaan asetuksia */
+@media screen and (max-width: 768px) {
+    .player-image {
+        width: 100%;
+        /* Täyttää koko leveys mobiililaitteilla */
+        max-width: none;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 1.8em;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
