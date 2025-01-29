@@ -131,13 +131,17 @@ form {
   
   /* Set a style for all buttons */
   button {
-    background-color: #04AA6D;
+    background-color: #04AA6D; /* Keep original green color */
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
     border: none;
+    padding: 6px 12px; /* Reduce padding */
+    font-size: 14px; /* Make text smaller */
     cursor: pointer;
-    width: 100%;
+    position: absolute;
+    top: 10px; /* Position near top */
+    right: 15px; /* Move to top-right */
+    border-radius: 5px; /* Rounded corners */
+    width: auto;
   }
   
   /* Add a hover effect for buttons */
