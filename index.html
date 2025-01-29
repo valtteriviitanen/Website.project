@@ -43,7 +43,6 @@
       &#9776;
     </div>
     <div class="menu-content" id="menu-content">
-      <button class="language-btn" onclick="changeLanguage()">EN / SE</button>
       <a href="index.html">Etusivu</a>
       <a href="players.html">Pelaajat</a>
       <a href="contact.html">Yhteystiedot</a>
@@ -102,16 +101,7 @@
       menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
   </script>
-  <script>
-    function changeLanguage() {
-      let currentPage = window.location.pathname;
-      if (currentPage.includes("swedish.html")) {
-        window.location.href = "index.html";
-      } else {
-        window.location.href = "swedish.html";
-      }
-    }
-  </script>
+
 
 </body>
 
