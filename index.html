@@ -19,20 +19,20 @@
       <div class="imgcontainer">
         <img src="img_avatar2.png" alt="Avatar" class="avatar">
       </div>
-    
+
       <div class="container">
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
-    
+
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
-    
+
         <button type="submit">Login</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
       </div>
-    
+
       <div class="container" style="background-color:#f1f1f1">
         <button type="button" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
@@ -43,6 +43,7 @@
       &#9776;
     </div>
     <div class="menu-content" id="menu-content">
+      <button class="language-btn" onclick="changeLanguage()">🇫🇮 / 🇸🇪</button>
       <a href="index.html">Etusivu</a>
       <a href="players.html">Pelaajat</a>
       <a href="contact.html">Yhteystiedot</a>
@@ -99,6 +100,16 @@
     function toggleMenu() {
       var menu = document.getElementById('menu-content');
       menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+  <script>
+    function changeLanguage() {
+      let currentPage = window.location.pathname;
+      if (currentPage.includes("swedish.html")) {
+        window.location.href = "index.html";
+      } else {
+        window.location.href = "swedish.html";
+      }
     }
   </script>
 
