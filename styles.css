@@ -28,6 +28,10 @@ p {
     padding: 10px;
     position: relative;
 }
+.logo {
+    height: 40px;
+    width: auto;
+}
 
 .hamburger {
     font-size: 30px;
